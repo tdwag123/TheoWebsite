@@ -216,6 +216,28 @@ h1 {
   margin: 0;
 }
 
+.problem-list {
+  display: grid;
+  gap: 12px;
+}
+
+.problem-item {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 248, 238, 0.95));
+}
+
+.problem-item h3 {
+  margin-bottom: 8px;
+  font-size: 1.06rem;
+}
+
+.problem-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .question-list {
   margin: 0;
   padding-left: 20px;
@@ -231,15 +253,32 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 }
 
-.image-tile {
-  border: 1px dashed var(--border);
-  border-radius: 12px;
-  min-height: 86px;
-  padding: 14px;
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  background: rgba(255, 255, 255, 0.75);
+.image-card {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: 0 12px 24px rgba(31, 20, 12, 0.08);
+}
+
+.image-card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: #f3efe8;
+}
+
+.image-card--poster img {
+  object-fit: contain;
+  background: #fff;
+}
+
+.image-card figcaption {
+  padding: 10px 12px 12px;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .contact-list {
@@ -272,6 +311,36 @@ h1 {
   transform: translateY(0);
 }
 
+.image-placeholder {
+  width: 100%;
+  height: 220px;
+  padding: 16px;
+  display: flex;
+  align-items: end;
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.02em;
+}
+
+.image-placeholder--poster {
+  background: linear-gradient(135deg, #111 0%, #4f4f4f 100%);
+}
+
+.image-placeholder--fractal {
+  background: radial-gradient(circle at 50% 50%, #0f1846 0%, #051437 38%, #010814 100%);
+}
+
+.image-placeholder--action {
+  background: linear-gradient(135deg, #8d5a2b 0%, #6d3c17 45%, #2f1d10 100%);
+}
+
+.image-placeholder--pattern {
+  background: linear-gradient(135deg, #d8c29d 0%, #c58e59 50%, #6f3f22 100%);
+}
+
 @media (max-width: 720px) {
   .site-header {
     border-radius: 20px;
@@ -287,5 +356,9 @@ h1 {
     gap: 12px;
     overflow-x: auto;
     padding-bottom: 4px;
+  }
+
+  .image-placeholder {
+    height: 180px;
   }
 }
