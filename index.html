@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Theo | Personal Site</title>
+    <title>Theo Meek | Mathematics and Applied Mathematics</title>
     <meta
       name="description"
-      content="Theo's personal website: projects, background, and contact details."
+      content="Theo Meek's personal site: formal verification, mathematical AI, scientific computing, and trustworthy mathematical software."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,8 +24,9 @@
       <a class="logo" href="#home">Theo</a>
       <nav>
         <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -33,57 +34,182 @@
 
     <main id="home">
       <section class="hero reveal">
-        <p class="eyebrow">Personal Website</p>
+        <p class="eyebrow">Theo Meek</p>
         <h1>
-          Building useful things on the web,
-          <span class="accent">one project at a time.</span>
+          Mathematics, computation, and
+          <span class="accent">reliability in the same room.</span>
         </h1>
         <p class="hero-copy">
-          Hi, I am Theo. This is my corner of the internet where I share what I
-          am learning, what I am building, and how to reach me.
+          I am an undergraduate at the University of Washington studying
+          Mathematics and Applied Mathematics. I am interested in formal
+          verification, mathematical AI, numerical PDEs, and trustworthy
+          scientific computing.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">See My Work</a>
+          <a class="btn btn-primary" href="#research">Explore Research</a>
           <a class="btn btn-ghost" href="#contact">Get In Touch</a>
         </div>
       </section>
 
       <section id="about" class="panel reveal">
-        <h2>About Me</h2>
+        <h2>About</h2>
         <p>
-          I enjoy creating clean, practical digital experiences. I care about
-          thoughtful design, readable code, and projects that solve real
-          problems.
+          Broadly, I like problems where mathematics, computation, and
+          reliability collide: Can AI help us prove things? Can learned models
+          be trusted inside scientific solvers? Can we make mathematical
+          software that is both useful and rigorous?
         </p>
       </section>
 
-      <section id="projects" class="panel reveal">
-        <h2>Featured Projects</h2>
-        <div class="cards">
+      <section id="research" class="panel reveal">
+        <h2>Research</h2>
+        <p class="section-intro">
+          My work is mostly about building computational tools that do math
+          carefully.
+        </p>
+        <div class="cards research-cards">
           <article class="card">
-            <h3>Project One</h3>
-            <p>Replace this with a short description of your project.</p>
-            <a href="#" aria-label="View Project One">View Project</a>
+            <h3>Formal verification and Lean 4</h3>
+            <p>
+              I work on AI-assisted formalization, automated theorem proving,
+              and proof evaluation in Lean 4. I care about proofs that are not
+              only kernel-accepted, but readable, faithful, and useful.
+            </p>
           </article>
           <article class="card">
-            <h3>Project Two</h3>
-            <p>Replace this with a short description of your project.</p>
-            <a href="#" aria-label="View Project Two">View Project</a>
+            <h3>Mathematical AI</h3>
+            <p>
+              I am interested in machine learning systems that can reason about
+              mathematics, search through libraries, and help with theorem
+              proving.
+            </p>
           </article>
           <article class="card">
-            <h3>Project Three</h3>
-            <p>Replace this with a short description of your project.</p>
-            <a href="#" aria-label="View Project Three">View Project</a>
+            <h3>Scientific computing</h3>
+            <p>
+              Through LLNL/RIPS-IPAM, I worked on derivative-finding methods
+              for constitutive laws used in finite element solvers. Fitting the
+              data is not enough; if derivatives are bad, Newton solvers will
+              notice.
+            </p>
           </article>
         </div>
       </section>
 
+      <section id="publications" class="panel reveal">
+        <h2>Publications</h2>
+        <div class="publication-list">
+          <article class="publication-item">
+            <h3>
+              Formalizing Numerical Analysis: An Agent Pipeline and Quality
+              Audit Beyond Kernel Acceptance
+            </h3>
+            <p>ICML workshop paper. First author.</p>
+          </article>
+          <article class="publication-item">
+            <h3>Learned Interventions Inside Lean 4's <code>grind</code></h3>
+            <p>ICML workshop paper.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="problems" class="panel reveal">
+        <h2>Problems That Fascinate Me</h2>
+        <p class="section-intro">
+          This is where I keep questions I cannot stop thinking about.
+        </p>
+        <ul class="question-list">
+          <li>Can AI systems become genuinely useful collaborators for mathematicians?</li>
+          <li>How should we evaluate a formal proof beyond "Lean accepts it"?</li>
+          <li>
+            What makes a learned scientific model trustworthy enough to use
+            inside a PDE solver?
+          </li>
+          <li>
+            Can we design derivative tests that catch subtle failures before
+            they break a numerical method?
+          </li>
+          <li>
+            How can we make mathematical software more transparent, auditable,
+            and beautiful?
+          </li>
+          <li>Add your own problems here.</li>
+        </ul>
+      </section>
+
+      <section id="images" class="panel reveal">
+        <h2>Images I Like</h2>
+        <p class="section-intro">
+          A small collection of images, diagrams, plots, screenshots, and
+          mathematical objects I find beautiful, strange, funny, or motivating.
+        </p>
+        <div class="image-grid">
+          <div class="image-tile">Lean proof states</div>
+          <div class="image-tile">PDE solution plots</div>
+          <div class="image-tile">Newton convergence graphs</div>
+          <div class="image-tile">Gaussian process samples</div>
+          <div class="image-tile">Weird failed experiments</div>
+          <div class="image-tile">Beautiful diagrams from papers</div>
+          <div class="image-tile">Math notes or blackboard photos</div>
+          <div class="image-tile">Plots that accidentally look cooler than expected</div>
+        </div>
+      </section>
+
+      <section id="teaching" class="panel reveal">
+        <h2>Teaching</h2>
+        <p>
+          I care about teaching mathematics because I like watching ideas click.
+          My experience includes tutoring, AP Calculus instruction,
+          personalized lesson planning, instructional videos, and teaching
+          assistant work at the University of Washington.
+        </p>
+      </section>
+
+      <section id="experience" class="panel reveal">
+        <h2>Selected Experience</h2>
+        <div class="publication-list">
+          <article class="publication-item">
+            <h3>Lawrence Livermore National Laboratory / RIPS-IPAM</h3>
+            <p>
+              Derivative-finding methods for constitutive laws in finite
+              element solvers.
+            </p>
+          </article>
+          <article class="publication-item">
+            <h3>UW Math and AI Lab</h3>
+            <p>
+              Lean 4 formalization, automated mathematics, proof evaluation,
+              and mathematical AI.
+            </p>
+          </article>
+          <article class="publication-item">
+            <h3>Formal Verification Group, Zhejiang University</h3>
+            <p>
+              Informal and formal mathematical reasoning, including work related
+              to miniF2F and reinforcement-learning-based theorem proving.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="awards" class="panel reveal">
+        <h2>Awards and Service</h2>
+        <p>
+          Selected honors and activities include the UCLA RIPS/IPAM Fellowship,
+          UW Math AI Lab Fellowship, Outstanding Lean Contributions Award, 2nd
+          place at the UW Lean Hackathon, and co-founding King County Keys, a
+          nonprofit providing free online music lessons to K-8 students.
+        </p>
+      </section>
+
       <section id="contact" class="panel reveal">
         <h2>Contact</h2>
-        <p>
-          Want to collaborate or just say hi?
-          <a href="mailto:you@example.com">you@example.com</a>
-        </p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:theomeek@hotmail.com">theomeek@hotmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/tdwag123" target="_blank" rel="noreferrer">github.com/tdwag123</a></li>
+          <li>CV: <a href="#">Add link</a></li>
+          <li>LinkedIn: <a href="#">Add link</a></li>
+        </ul>
       </section>
     </main>
 
