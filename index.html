@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theo | Personal Site</title>
+    <meta
+      name="description"
+      content="Theo's personal website: projects, background, and contact details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#home">Theo</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero reveal">
+        <p class="eyebrow">Personal Website</p>
+        <h1>
+          Building useful things on the web,
+          <span class="accent">one project at a time.</span>
+        </h1>
+        <p class="hero-copy">
+          Hi, I am Theo. This is my corner of the internet where I share what I
+          am learning, what I am building, and how to reach me.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See My Work</a>
+          <a class="btn btn-ghost" href="#contact">Get In Touch</a>
+        </div>
+      </section>
+
+      <section id="about" class="panel reveal">
+        <h2>About Me</h2>
+        <p>
+          I enjoy creating clean, practical digital experiences. I care about
+          thoughtful design, readable code, and projects that solve real
+          problems.
+        </p>
+      </section>
+
+      <section id="projects" class="panel reveal">
+        <h2>Featured Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>Replace this with a short description of your project.</p>
+            <a href="#" aria-label="View Project One">View Project</a>
+          </article>
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>Replace this with a short description of your project.</p>
+            <a href="#" aria-label="View Project Two">View Project</a>
+          </article>
+          <article class="card">
+            <h3>Project Three</h3>
+            <p>Replace this with a short description of your project.</p>
+            <a href="#" aria-label="View Project Three">View Project</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="panel reveal">
+        <h2>Contact</h2>
+        <p>
+          Want to collaborate or just say hi?
+          <a href="mailto:you@example.com">you@example.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><span id="year"></span> Theo. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
