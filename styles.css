@@ -1,15 +1,15 @@
 :root {
-  --bg: #f7f3ea;
-  --bg-soft: #fffaf0;
-  --surface: #fffffb;
-  --surface-muted: #f1eadc;
-  --text: #222018;
-  --muted: #645f54;
-  --accent: #1c6b7a;
-  --accent-strong: #164f5d;
-  --accent-warm: #b45f38;
-  --border: #d9cfbd;
-  --shadow: 0 18px 38px rgba(71, 54, 32, 0.12);
+  --bg: #0d1117;
+  --bg-soft: #141b23;
+  --surface: #111821;
+  --surface-muted: #1c2631;
+  --text: #f3f0e8;
+  --muted: #b9c0c8;
+  --accent: #57b8c9;
+  --accent-strong: #8fdce8;
+  --accent-warm: #f0a66f;
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 18px 38px rgba(0, 0, 0, 0.36);
 }
 
 * {
@@ -25,8 +25,8 @@ body {
 body {
   min-height: 100vh;
   background:
-    linear-gradient(135deg, rgba(28, 107, 122, 0.08), transparent 34%),
-    linear-gradient(315deg, rgba(180, 95, 56, 0.1), transparent 38%),
+    linear-gradient(135deg, rgba(87, 184, 201, 0.12), transparent 34%),
+    linear-gradient(315deg, rgba(240, 166, 111, 0.1), transparent 38%),
     var(--bg);
   color: var(--text);
   font-family: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
@@ -44,7 +44,7 @@ body {
 .bg-shape-1 {
   width: 320px;
   height: 320px;
-  background: rgba(28, 107, 122, 0.16);
+  background: rgba(87, 184, 201, 0.16);
   top: -110px;
   left: -95px;
 }
@@ -52,7 +52,7 @@ body {
 .bg-shape-2 {
   width: 260px;
   height: 260px;
-  background: rgba(180, 95, 56, 0.14);
+  background: rgba(240, 166, 111, 0.13);
   right: -70px;
   bottom: 8%;
 }
@@ -67,8 +67,8 @@ body {
   gap: 18px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  background: rgba(255, 255, 251, 0.88);
-  box-shadow: 0 8px 24px rgba(71, 54, 32, 0.08);
+  background: rgba(17, 24, 33, 0.86);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(10px);
 }
 
@@ -177,8 +177,8 @@ h3 {
 
 .btn-primary {
   background: var(--accent);
-  color: #fff;
-  box-shadow: 0 10px 20px rgba(28, 107, 122, 0.18);
+  color: #091116;
+  box-shadow: 0 10px 20px rgba(87, 184, 201, 0.16);
 }
 
 .btn-primary:hover,
@@ -188,7 +188,7 @@ h3 {
 
 .btn-ghost {
   border: 1px solid var(--border);
-  background: rgba(255, 255, 251, 0.55);
+  background: rgba(17, 24, 33, 0.55);
   color: var(--accent-strong);
 }
 
@@ -197,7 +197,7 @@ h3 {
   padding: clamp(20px, 3vw, 30px);
   border: 1px solid var(--border);
   border-radius: 8px;
-  background: rgba(255, 255, 251, 0.82);
+  background: rgba(17, 24, 33, 0.82);
   box-shadow: var(--shadow);
 }
 
@@ -275,7 +275,7 @@ h3 {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
-  box-shadow: 0 12px 24px rgba(71, 54, 32, 0.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
 }
 
 .image-card img {
