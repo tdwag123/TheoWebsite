@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Research — Theo Meek</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">Theo</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html" class="active">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="images.html">Images</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h2>Research</h2>
+        <p class="section-intro">My work is mostly about building computational tools that do math carefully.</p>
+        <div class="cards research-cards">
+          <article class="card">
+            <h3>Formal verification and Lean 4</h3>
+            <p>I work on AI-assisted formalization, automated theorem proving, and proof evaluation in Lean 4. I care about proofs that are not only kernel-accepted, but readable, faithful, and useful.</p>
+          </article>
+          <article class="card">
+            <h3>Mathematical AI</h3>
+            <p>I am interested in machine learning systems that can reason about mathematics, search through libraries, and help with theorem proving.</p>
+          </article>
+          <article class="card">
+            <h3>Scientific computing</h3>
+            <p>Through LLNL/RIPS-IPAM, I worked on derivative-finding methods for constitutive laws used in finite element solvers. Fitting the data is not enough; if derivatives are bad, Newton solvers will notice.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><span id="year"></span> Theo. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
